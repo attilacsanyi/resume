@@ -1,33 +1,35 @@
-/* tslint:disable:no-unused-variable */
-
 import { TestBed, async } from '@angular/core/testing';
+import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
 
-describe('App: Resume', () => {
+describe('AppComponent', () => {
+  let fixture, component, element;
+
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-    });
+      imports: [CoreModule],
+      declarations: [AppComponent]
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.debugElement.componentInstance;
+    fixture.detectChanges();
+    element = fixture.debugElement.nativeElement;
   });
 
   it('should create the app', async(() => {
-    let fixture = TestBed.createComponent(AppComponent);
-    let app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeTruthy();
   }));
 
   it(`should have as title 'Resume'`, async(() => {
-    let fixture = TestBed.createComponent(AppComponent);
-    let app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Resume');
+    expect(component.title).toEqual('Resume');
   }));
 
   it('should render title in tag with id #ac-title', async(() => {
-    let fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    let compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('#ac-title').textContent).toContain('Resume');
+    expect(element.querySelector('#ac-title').textContent).toEqual('Resume');
+  }));
+
+  it('should render name in tag with id #ac-name', async(() => {
+    expect(element.querySelector('#ac-name').textContent).toEqual('Attila Csányi');
   }));
 });
