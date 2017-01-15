@@ -1,7 +1,7 @@
 {
   "project": {
-    "version": "1.0.0-beta.19-3",
-    "name": "resume"
+    "version": "1.0.0-beta.24",
+    "name": "wmm"
   },
   "apps": [
     {
@@ -15,10 +15,10 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "ac",
       "mobile": false,
       "styles": [
-        "styles.sass"
+        "styles.scss"
       ],
       "scripts": [],
       "environments": {
@@ -41,7 +41,7 @@
     }
   },
   "defaults": {
-    "styleExt": "sass",
+    "styleExt": "scss",
     "prefixInterfaces": false,
     "inline": {
       "style": false,

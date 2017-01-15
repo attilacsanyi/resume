@@ -5,7 +5,7 @@ export class ResumePage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getToolbarTitle() {
+    return element(by.id('ac-title')).getText();
   }
 }

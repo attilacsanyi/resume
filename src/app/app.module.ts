@@ -5,6 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+// Material
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
+// Flex Layout
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +19,13 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+
+    // Material
+    MaterialModule.forRoot(),
+
+    // Flex Layout
+    FlexLayoutModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

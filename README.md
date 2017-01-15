@@ -1,1 +1,1 @@
-# Awesome Angular2 Resume
+# Awesome Angular Resume

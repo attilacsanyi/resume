@@ -7,8 +7,8 @@ describe('resume App', function() {
     page = new ResumePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying "Resume"', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getToolbarTitle()).toEqual('Resume');
   });
 });
