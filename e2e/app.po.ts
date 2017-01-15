@@ -8,4 +8,8 @@ export class ResumePage {
   getToolbarTitle() {
     return element(by.id('ac-title')).getText();
   }
+
+  getToolbarName() {
+    return element(by.id('ac-name')).getText();
+  }
 }
