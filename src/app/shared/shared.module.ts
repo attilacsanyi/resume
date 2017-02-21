@@ -17,10 +17,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CommonModule,
 
     // Material
-    MaterialModule.forRoot(),
+    MaterialModule,
 
     // Flex Layout
-    FlexLayoutModule.forRoot()
+    FlexLayoutModule
   ],
   declarations: [],
   exports: [

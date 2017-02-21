@@ -7,7 +7,7 @@ describe('AppComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [CoreModule],
+      imports: [CoreModule.forRoot()],
       declarations: [AppComponent]
     }).compileComponents();
 
@@ -17,19 +17,19 @@ describe('AppComponent', () => {
     element = fixture.debugElement.nativeElement;
   });
 
-  it('should create the app', async(() => {
+  it('should create the app', () => {
     expect(component).toBeTruthy();
-  }));
+  });
 
-  it(`should have as title 'Resume'`, async(() => {
+  it(`should have as title 'Resume'`, () => {
     expect(component.title).toEqual('Resume');
-  }));
+  });
 
-  it('should render title in tag with id #ac-title', async(() => {
+  it('should render title in tag with id #ac-title', () => {
     expect(element.querySelector('#ac-title').textContent).toEqual('Resume');
-  }));
+  });
 
-  it('should render name in tag with id #ac-name', async(() => {
+  it('should render name in tag with id #ac-name', () => {
     expect(element.querySelector('#ac-name').textContent).toEqual('Attila Csányi');
-  }));
+  });
 });

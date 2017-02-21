@@ -86,9 +86,9 @@
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-2.4.7.tgz#8bed9a2d37e81342bd41d189df88aa3e02393cfb"
 
-"@angular/flex-layout@2.0.0-beta.4":
-  version "2.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-2.0.0-beta.4.tgz#b8cbc15ed17a35617738bb9cd76d8d80ba11638f"
+"@angular/flex-layout@2.0.0-beta.5":
+  version "2.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-2.0.0-beta.5.tgz#fd66e094fe6a73664e36aaa6dab6e17b429293c7"
 
 "@angular/forms@2.4.7":
   version "2.4.7"
@@ -102,9 +102,9 @@
   version "2.4.7"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-2.4.7.tgz#c39a23f01ad6a311ff724d35d6395a94e1dcf1e4"
 
-"@angular/material@2.0.0-beta.1":
-  version "2.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@angular/material/-/material-2.0.0-beta.1.tgz#106a0b79fb2b48a7606a0682c4e5d0bbe03364a0"
+"@angular/material@2.0.0-beta.2":
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-2.0.0-beta.2.tgz#65ee8733990347b7518b7f42113e02e069dc109b"
 
 "@angular/platform-browser-dynamic@2.4.7":
   version "2.4.7"
@@ -5181,13 +5181,9 @@ typedarray@~0.0.5:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@2.1.6:
+typescript@2.1.6, "typescript@>=2.0.0 <2.2.0":
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.6.tgz#40c7e6e9e5da7961b7718b55505f9cac9487a607"
-
-"typescript@>=2.0.0 <2.2.0":
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.5.tgz#6fe9479e00e01855247cea216e7561bafcdbcd4a"
 
 ua-parser-js@0.7.12:
   version "0.7.12"
