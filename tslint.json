@@ -50,7 +50,8 @@
     "no-empty-interface": true,
     "no-eval": true,
     "no-inferrable-types": [
-      true
+      true,
+      "ignore-params"
     ],
     "no-shadowed-variable": true,
     "no-string-literal": false,
