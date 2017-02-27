@@ -9,8 +9,8 @@
     "build-prod": "ng build --prod",
     "prod": "npm run lint && npm test && npm run build-prod && npm run lite-server",
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0 --port 4201 --live-reload-port 49153",
-    "start-prod": "ng serve --prod --host 0.0.0.0 --port 4201 --live-reload-port 49153",
+    "start": "ng serve --host 0.0.0.0 --port 4201",
+    "start-prod": "ng serve --prod --host 0.0.0.0 --port 4201",
     "lint": "ng lint",
     "test": "ng test -sr -cc",
     "tdd": "ng test",
@@ -22,7 +22,7 @@
     "@angular/common": "2.4.8",
     "@angular/compiler": "2.4.8",
     "@angular/core": "2.4.8",
-    "@angular/flex-layout": "2.0.0-beta.5",
+    "@angular/flex-layout": "2.0.0-rc.1",
     "@angular/forms": "2.4.8",
     "@angular/http": "2.4.8",
     "@angular/material": "2.0.0-beta.2",
@@ -35,12 +35,11 @@
     "zone.js": "0.7.7"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.0-beta.32.3",
+    "@angular/cli": "1.0.0-rc.0",
     "@angular/compiler-cli": "2.4.8",
-    "@angular/language-service": "2.4.8",
     "@types/jasmine": "2.5.43",
     "@types/node": "7.0.5",
-    "codelyzer": "2.0.0-beta.4",
+    "codelyzer": "2.0.0",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "3.2.0",
     "karma": "1.5.0",
@@ -56,6 +55,6 @@
     "protractor": "5.1.1",
     "ts-node": "2.1.0",
     "tslint": "4.4.2",
-    "typescript": "2.1.6"
+    "typescript": "2.2.1"
   }
 }

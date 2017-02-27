@@ -5,6 +5,7 @@ module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular/cli'],
+    browserNoActivityTimeout: 60000, // default 10000
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
@@ -31,7 +32,6 @@ module.exports = function (config) {
       fixWebpackSourcePaths: true
     },
     angularCli: {
-      config: './.angular-cli.json',
       environment: 'dev'
     },
     reporters: config.angularCli && config.angularCli.codeCoverage

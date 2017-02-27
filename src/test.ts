@@ -12,9 +12,6 @@ import {
   platformBrowserDynamicTesting
 } from '@angular/platform-browser-dynamic/testing';
 
-// Needed for successful running under Windows Server 2012 R2
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 6000;
-
 // Unfortunately there's no typing for the `__karma__` variable. Just declare it as any.
 declare var __karma__: any;
 declare var require: any;
