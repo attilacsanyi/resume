@@ -3,6 +3,7 @@ import './rxjs-operators';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material
 import { MaterialModule } from '@angular/material';
@@ -14,7 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   imports: [
     // Angular
-    CommonModule,
+    CommonModule, BrowserAnimationsModule,
 
     // Material
     MaterialModule,
