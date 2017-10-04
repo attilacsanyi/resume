@@ -4,7 +4,7 @@
       {
         "name": "firebase",
         "urls": {
-          "https://ac-resume.firebaseapp.com/": {
+          "https://ac-resume-5269b.firebaseapp.com/": {
             "match": "prefix"
           }
         },
