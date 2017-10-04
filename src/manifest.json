@@ -1,7 +1,7 @@
 {
-  "name": "Angular Base PWA",
-  "short_name": "Angular Base",
-  "description": "Sample Angular Progressive Web App",
+  "name": "Attila Csanyi's Resume PWA",
+  "short_name": "Resume",
+  "description": "Attila Csanyi's Resume",
   "theme_color": "#3f51b5",
   "background_color": "#3f51b5",
   "display": "fullscreen",
