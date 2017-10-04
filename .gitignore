@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/firebase.json
 
 # dependencies
 /node_modules
@@ -27,11 +28,14 @@
 # misc
 /.sass-cache
 /connect.lock
-/coverage/*
+/coverage
+/docs
 /libpeerconnection.log
 npm-debug.log
 testem.log
 /typings
+yarn-error.log
+firebase-debug.log
 
 # e2e
 /e2e/*.js

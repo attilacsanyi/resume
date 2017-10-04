@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { CoreModule } from '../core.module';
 
 import { TitleComponent } from './title.component';
+import { TestModule } from '../../../../test.module';
 
 describe('TitleComponent', () => {
   let component: TitleComponent;
@@ -9,7 +9,7 @@ describe('TitleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [CoreModule],
+      imports: [TestModule]
     }).compileComponents();
   }));
 
@@ -19,7 +19,7 @@ describe('TitleComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

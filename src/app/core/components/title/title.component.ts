@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
+  moduleId: module.id,
   selector: 'ac-title',
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.scss'],
@@ -13,6 +14,6 @@ export class TitleComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
+
 }

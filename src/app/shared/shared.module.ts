@@ -1,32 +1,40 @@
-// Add the RxJS Observable operators we need in this app.
-import './rxjs-operators';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModuleWithProviders, NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// Material
-import { MaterialModule } from '@angular/material';
-import 'hammerjs';
+// Material (custom)
+import { MaterialModule } from './material.module';
 
 // Flex Layout
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+// Components
+import {
+
+} from './components';
+
+const sharedComponents = [];
+
+const dialogComponents = [];
+
 @NgModule({
   imports: [
     // Angular
-    CommonModule, BrowserAnimationsModule,
+    CommonModule, RouterModule, FormsModule, ReactiveFormsModule,
 
-    // Material
+    // Material (custom)
     MaterialModule,
 
     // Flex Layout
-    FlexLayoutModule
+    FlexLayoutModule,
+
   ],
-  declarations: [],
+  declarations: [...sharedComponents, ...dialogComponents],
   exports: [
     // Angular
-    CommonModule, RouterModule,
+    CommonModule, RouterModule, HttpClientModule, FormsModule, ReactiveFormsModule,
 
     // Material
     MaterialModule,
@@ -35,7 +43,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
 
     // Shared
+    ...sharedComponents
   ],
+  // Dialogs
+  entryComponents: [...dialogComponents],
   providers: []
 })
 export class SharedModule {

@@ -1,13 +1,14 @@
 import { TestBed, async } from '@angular/core/testing';
-import { CoreModule } from './core/core.module';
+
 import { AppComponent } from './app.component';
+import { TestModule } from './../test.module';
 
 describe('AppComponent', () => {
   let fixture, component, element;
 
-  beforeEach(() => {
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [CoreModule.forRoot()],
+      imports: [TestModule],
       declarations: [AppComponent]
     }).compileComponents();
 
@@ -15,7 +16,7 @@ describe('AppComponent', () => {
     component = fixture.debugElement.componentInstance;
     fixture.detectChanges();
     element = fixture.debugElement.nativeElement;
-  });
+  }));
 
   it('should create the app', () => {
     expect(component).toBeTruthy();

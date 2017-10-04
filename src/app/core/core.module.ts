@@ -1,12 +1,18 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { SharedModule } from '../shared/shared.module';
-import { TitleComponent } from './title/title.component';
+
+// Components
+import { TitleComponent } from '../core/components';
 
 @NgModule({
-  imports: [SharedModule.forRoot()],
+  imports: [BrowserAnimationsModule, SharedModule.forRoot()],
   declarations: [TitleComponent],
-  exports: [TitleComponent],
-  providers: []
+  providers: [],
+  // Dynamically loaded comonents here
+  entryComponents: [],
+  exports: [SharedModule, TitleComponent],
 })
 export class CoreModule {
 
@@ -18,8 +24,6 @@ export class CoreModule {
   }
 
   constructor( @Optional() @SkipSelf() parentModule: CoreModule) {
-    if (parentModule) {
-      throw new Error('CoreModule is already loaded. Import it in the AppModule only!');
-    }
+    if (parentModule) throw new Error('CoreModule is already loaded. Import it in the AppModule only!');
   }
 }

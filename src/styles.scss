@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'theme';
+@import 'styles/_variables.scss';
+@import 'styles/_placeholders.scss';
+@import 'styles/_fonts.scss';
+@import 'styles/_colours.scss';
+@import 'styles/_theme.scss';
+@import 'styles/_typography.scss';
 
-* {
-    font-family: lato;
+html * {
+  @extend %lato;
 }

@@ -8,13 +8,14 @@
     ".vscode": true,
     "coverage": true,
     "dist": true,
+    "docs": true,
     "**/node_modules": true,
-    "**/bower_components": true,
     "**/*.d.ts": true,
     "**/*.js": true
   },
   "typescript.tsdk": "node_modules/typescript/lib",
+  "window.title": "${rootName}${separator}${activeEditorLong} ${dirty}",
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
-  "vsicons.presets.angular": true
+  "typescript.implementationsCodeLens.enabled": true
 }
